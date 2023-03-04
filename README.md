@@ -34,3 +34,33 @@ npm i
 ```bash
 npm run dev
 ```
+
+## Git hooks
+
+1. Commit your project to a Github repository
+
+2. Execute husky
+
+```bash
+npx husky install
+```
+
+3. Set 'prepare: "husky install"' in `package.json`
+
+```bash
+npm set-script prepare "husky install"
+```
+
+3. Add husky pre-commit
+
+```bash
+npx husky add .husky/pre-commit "npx lint-staged"
+```
+
+4. Add the following below 'devDependecies' in `package.json`
+
+```
+  "lint-staged": {
+    "**/*": "prettier --write --ignore-unknown"
+  }
+```
