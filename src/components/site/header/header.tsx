@@ -9,15 +9,18 @@ export default function Header(): JSX.Element {
         <div>
           <h2 className='text-lg font-bold'>LOGO</h2>
         </div>
-        <ul className='flex items-center justify-between gap-4'>
+        <ul className='flex items-center justify-between gap-4 pt-2 text-sm font-medium'>
           <li>
-            <Link href=''>Home</Link>
+            <Link href='/'>Home</Link>
           </li>
           <li>
-            <Link href=''>Link1</Link>
+            <Link href='#'>Link1</Link>
           </li>
           <li>
-            <Link href=''>Link2</Link>
+            <Link href='#'>Link2</Link>
+          </li>
+          <li>
+            <Link href='#'>Link3</Link>
           </li>
         </ul>
         <RightContentHeader />

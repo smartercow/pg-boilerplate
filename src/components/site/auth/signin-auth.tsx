@@ -82,10 +82,10 @@ export default function AuthLogin({
               type='checkbox'
               name='remember'
               value='Remember me'
-              className='h-5 w-5'
+              className='checkbox'
             />
             <label htmlFor='remember' className='form-label'>
-              Husk mig
+              Remember me
             </label>
           </span>
           <span>
@@ -95,7 +95,7 @@ export default function AuthLogin({
               }
               className='form-label cursor-pointer'
             >
-              Glemt password ?
+              Forgot password?
             </p>
           </span>
         </div>
@@ -108,7 +108,7 @@ export default function AuthLogin({
               checkoutLogin ? 'w-40 text-center text-lg' : 'w-full'
             )}
           >
-            Log Ind
+            Sign In
           </button>
         </div>
       </form>

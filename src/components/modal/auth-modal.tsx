@@ -41,7 +41,7 @@ export default function AuthModal(): JSX.Element {
       closeModal={handleClose}
       className='dosis max-w-xs md:max-w-md'
     >
-      <div className='text-main-black bg-white px-6 py-3 md:px-10 md:py-8'>
+      <div className='text-main-black space-y-6 bg-white px-6 py-3 md:px-10 md:py-8'>
         <div className='flex justify-end'>
           <button onClick={() => setAuthModal({ open: false, view: 'login' })}>
             <HeroIcon iconName='XMarkIcon' />
