@@ -35,7 +35,7 @@ npm i
 npm run dev
 ```
 
-## Git hooks
+## Add git hooks
 
 1. Commit your project to a Github repository
 
